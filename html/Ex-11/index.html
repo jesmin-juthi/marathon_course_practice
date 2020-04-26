@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Table</title>
+	<style type="text/css">
+	
+		table, td, th{
+			border: 1px solid black;
+			text-align: center;
+			border-collapse: collapse;
+			padding: 5px;
+		}
+		<!-- table{ -->
+			<!-- border-spacing: 15px; -->
+		<!-- } -->
+		
+		table#mytable tr:nth-child(even){
+			background-color: #F27A29;
+			color: #fff;
+		}
+		table#mytable tr:nth-child(odd){
+			background-color: #eee;
+		}
+		
+	</style>
+</head>
+<body>
+	<table id="mytable" style="width: 100%;">
+		
+		<!-- <tr>
+			<th>Name</th>
+			<th>Contact</th>
+			<th>Address</th>
+		</tr> -->
+		<caption>This is caption</caption>
+		<tr >
+			<!-- <th colspan="2" rowspan="2">Name & Contact</th> -->
+			<th colspan="2">Name & Contact</th>
+			<!-- <th>Contact</th>  //marge-->
+			<th>Address</th>
+		</tr>
+	
+		<tr>
+			<!-- <td>Jesmin</td> -->
+			<!-- <td>01404858</td> -->
+			<td>Jesmin</td> 
+			<td>01404858</td>
+			<td>Mirpur, Dhaka</td>
+		</tr>
+		<tr>
+			<td>Juthi</td>
+			<td>01404858</td>
+			<td>Mirpur, Dhaka</td>
+		</tr>
+		<tr>
+			<td>Sathil</td>
+			<td>01404858</td>
+			<td>Mirpur, Dhaka</td>
+		</tr>
+		
+	
+	
+	</table>
+</body>
+</html>

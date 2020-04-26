@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	
+	<p id="name"></p>
+	<img src="img/off.jpg" id="demo" height="180" width="100" />
+	<p>
+		
+		<button type="button" onclick="light(1)">On</button>
+		<button type="button" onclick="light(0)">Off</button>
+	
+	</p>
+	
+	
+	<script type="text/javascript">
+	
+		document.getElementById("name").innerHTML = "Jesmin Juthi";
+		document.getElementById("name").style.color = "blue";
+		document.getElementById("name").style.fontSize = "30px";
+		document.getElementById("name").style.fontWeight = "bold";
+		function light(magic) {
+			var img; 
+			if(magic == 0){
+				img="img/off.jpg";
+			}else{
+				img="img/on.jpg"
+			}
+			document.getElementById("demo").src=img;
+		
+		
+		}
+	
+	</script>
+</body>
+</html>
