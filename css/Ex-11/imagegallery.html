@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Gallery</title>
+	<style type="text/css">
+		ul{
+			list-style: none;
+			background: #CC3366;
+			overflow: hidden;
+		}
+		ul li{
+			float: left;
+		}
+		ul li a, .link{
+			color: #fff;
+			display: inline-block;
+			padding: 10px 15px;
+			text-decoration: none;
+			font-size: 20px;
+			font-weight: bold;
+		}
+		ul li a:hover, .list:hover .link{
+			background:#993366;
+		}
+		ul li .list{
+			display: inline-block;
+		}
+		.dropdown{
+			display: none;
+			position: absolute;
+			z-index: 1;
+			min-width: 150px;
+			background: #990033;
+		}
+		.dropdown a{
+			display: block;
+			color: #fff;
+			text-decoration: none;
+			padding: 10px;
+		}
+		.list:hover .dropdown{
+			display: block;
+		}
+		.wrap{
+			width: 1000px;
+			margin: 0 auto;
+		}
+		.gallery{
+			width: 320px;
+			margin: 0 auto;
+			margin: 5px;
+			border: 1px solid #CC0033;
+			float: left;
+		}
+		.gallery:hover{
+			opacity: .8;
+			border: 1px solid #990033;
+		}
+		.gallery img{
+			width: 100%;
+		}
+		.desc{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">About</a></li>
+		<li class="list"><a href="#" class="link">Blog</a>
+			<div class="dropdown">
+				<a href="#">HTML</a>
+				<a href="#">CSS</a>
+				<a href="#">BOOTSTRAP</a>
+			</div>
+		</li>
+		<li><a href="#">Contact</a></li>
+	</ul>
+	<div class="wrap">
+	<div class="gallery">
+		<a href="image/1.jpg" target="_blank">
+			<img src="image/1.jpg" width="400" height="300" />
+		</a>
+		<div class="desc">
+			<p>This is Description</p>
+		
+		</div>
+	</div>
+	<div class="gallery">
+		<a href="image/2.jpg" target="_blank">
+			<img src="image/2.jpg" width="400" height="300" />
+		</a>
+		<div class="desc">
+			<p>This is Description</p>
+		
+		</div>
+	</div>
+	<div class="gallery">
+		<a href="image/3.jpg" target="_blank">
+			<img src="image/3.jpg" width="400" height="300" />
+		</a>
+		<div class="desc">
+			<p>This is Description</p>
+		
+		</div>
+	</div>
+	
+	</div>
+	
+</body>
+</html>
